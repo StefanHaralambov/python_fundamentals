@@ -19,4 +19,3 @@ while money_left >= price_for_1_loaf:
 
 
 print(f"You made {loaf_count} loaves of Easter bread! Now you have {colored_eggs} eggs and {money_left:.2f}BGN left.")
-

@@ -10,4 +10,4 @@ for string in range(number_of_strings):
     if not is_pure:
         print(f"{current_string} is not pure!")
     else:
-        print(f"{current_string} is pure!")
+        print(f"{current_string} is pure.")
