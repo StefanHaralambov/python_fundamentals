@@ -7,6 +7,6 @@ for message in range(number_messages):
     elif current_message == 86:
         print("How are you?")
     elif current_message < 88:
-        print("GREAT !")
+        print("GREAT!")
     else:
         print("Bye.")
