@@ -2,9 +2,9 @@ decoration_quantity = int(input())
 days_till_christmas = int(input())
 
 price_ornament = 2  # points = 5
-price_skirt = 5     # points = 3
-price_garland = 3    # points = 10
-price_lights = 15    # points = 17
+price_skirt = 5  # points = 3
+price_garland = 3  # points = 10
+price_lights = 15  # points = 17
 
 money_spent = 0
 christmas_spirit = 0
