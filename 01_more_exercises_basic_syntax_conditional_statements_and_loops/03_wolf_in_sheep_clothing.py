@@ -1,22 +1,16 @@
 command = input()
-word = ""
-animals = []
+is_close = True
+a = command.split(", ")
+a.reverse()
 
-for letters in command:
-    if letters == ",":
-        continue
-    elif letters == " ":
-        continue
-    if word == "wolf":
-        animals.append("wolf")
-        word = ""
-        word += letters
-        continue
-    elif word == "sheep":
-        animals.append("sheep")
-        word = ""
-        word += letters
-        continue
-    word += letters
+if a.index("wolf") == 0:
+    is_close = False
 
-print(animals)
+sheep_position = (a.index("wolf") - 1) + 1
+
+if not is_close:
+    print("Please go away and stop eating my sheep")
+else:
+    print(f"Oi! Sheep number {sheep_position}! You are about to be eaten by a wolf!")
+
+# wolf, sheep, sheep, sheep, sheep, sheep
