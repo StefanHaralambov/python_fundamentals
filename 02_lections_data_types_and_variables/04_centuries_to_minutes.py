@@ -3,7 +3,7 @@ unit = int(input())
 # ⦁	Assume that one year has 365.2422 days on average
 
 years = unit * 100
-days = years * 365.2422
+days = round(years * 365.2422)
 hours = days * 24
 minutes = hours * 60
 
