@@ -8,14 +8,17 @@ while command[0] != "Love!":
     target_index = int(command[1])
     next_position = last_position + target_index
     last_position = next_position
+
     if next_position > len(neighborhood) - 1:
         next_position = 0
         last_position = 0
+
     if neighborhood[next_position] == 0:
         print(f"Place {next_position} already had Valentine's day.")
         command = input().split()
         continue
     neighborhood[next_position] -= 2
+
     if neighborhood[next_position] == 0:
         print(f"Place {next_position} has Valentine's day.")
     command = input().split()

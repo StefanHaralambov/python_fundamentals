@@ -9,17 +9,16 @@ while command != "End":
 
     if target_index in range(len(targets)):
         for index in range(len(targets)):
-            current_target_points, aimed_target = targets[index], targets[target_index]
-            if current_target_points == -1:
+            if targets[index] == -1:
                 continue
             if target_index == index:
                 continue
-            if aimed_target < current_target_points:
-                current_target_points -= aimed_target
+            if targets[target_index] < targets[index]:
+                targets[index] -= targets[target_index]
 
             else:
-                current_target_points += aimed_target
-        aimed_target = -1
+                targets[index] += targets[target_index]
+        targets[target_index] = -1
         target_down += 1
 
     command = input()
