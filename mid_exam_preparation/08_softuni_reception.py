@@ -12,6 +12,6 @@ hours_count = math.ceil(students_count / employee_efficiency)
 
 employee_breaks = math.floor(students_count / employee_efficiency / 3)
 
-hours_count += employee_breaks
+hours_count_final = employee_breaks + hours_count
 
-print(f"Time needed: {hours_count}h.")
+print(f"Time needed: {hours_count_final}h.")
