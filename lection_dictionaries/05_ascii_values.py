@@ -1,0 +1,2 @@
+letters = input().split(", ")
+
